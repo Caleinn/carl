@@ -1,0 +1,174 @@
+ <style>
+    body {
+      margin: 0;
+      background-color: #f0f0f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .print-dialog-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 400vh;
+      width: 300px;
+      background-color: #2d2d30;
+      color: white;
+      padding: 1rem;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.6);
+      z-index: 1000;
+    }
+
+    .print-dialog h2 {
+      margin: 0;
+      font-size: 1.2rem;
+      color: white;
+    }
+
+    .print-dialog p {
+      margin: 0.5rem 0 1rem 0;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    .section {
+      margin-bottom: 1rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-size: 0.9rem;
+    }
+
+    select, input[type="text"], input[type="number"] {
+      width: 100%;
+      padding: 0.4rem;
+      border-radius: 3px;
+      border: none;
+      background-color: #3c3c3c;
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    .radio-group {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .radio-group label {
+      display: flex;
+      align-items: center;
+    }
+
+    .radio-group input {
+      margin-right: 0.3rem;
+    }
+
+    .link {
+      color: #4ea1f2;
+      font-size: 0.85rem;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    .btn-print {
+      background-color: #0078d4;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      font-weight: bold;
+      border-radius: 3px;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+
+    .btn-cancel {
+      background-color: #3c3c3c;
+      color: white;
+      padding: 0.5rem 1rem;
+      font-weight: bold;
+      font-size: 0.9rem;
+      border-radius: 3px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1rem;
+      border: 1px solid #555;
+    }
+
+    .resume {
+      position: absolute;
+      top: 50%;
+      left: 60%;
+      transform: translate(-50%, -50%);
+      background: white;
+      padding: 1rem;
+      max-width: 460px;
+      width: 100%;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+      border-radius: 5px;
+      font-size: 0.8rem;
+    }
+
+    .resume h1 {
+      margin: 0;
+      font-size: 1.2rem;
+      color: #003366;
+    }
+
+    .resume h2 {
+      font-size: 1rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .resume .section {
+      margin-top: 0.7rem;
+    }
+
+    .resume .section-title {
+      font-weight: bold;
+      color: #003366;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 3px;
+      margin-bottom: 5px;
+    }
+
+    .resume p {
+      margin: 0.1rem 0;
+      line-height: 1.25;
+    }
+
+    .resume ul {
+      padding-left: 1rem;
+      margin: 0;
+      font-size: 0.8rem;
+    }
+
+    .resume ul li {
+      margin-bottom: 0.25rem;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .header img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .header-info h1 {
+      margin: 0;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 0.5rem;
+    }
