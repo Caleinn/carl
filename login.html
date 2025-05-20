@@ -1,0 +1,55 @@
+5<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    .gradient-custom {
+      background: linear-gradient(to right, #000000, #000000);
+    }
+  </style>
+</head>
+<body class="gradient-custom">
+  <section class="vh-100">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card shadow-lg" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+              <h3 class="mb-5">Login</h3>
+              <form id="loginForm">
+                <div class="form-floating mb-3">
+                  <input type="text" id="username" class="form-control" placeholder="Username" required />
+                  <label for="username">Username</label>
+                </div>
+                <div class="form-floating mb-4">
+                  <input type="password" id="password" class="form-control" placeholder="Password" required />
+                  <label for="password">Password</label>
+                </div>
+                <button type="submit" class="btn btn-warning btn-lg w-100 mb-4">Login</button>
+                <p class="mb-0">Don't have an account? <a href="registration.html" class="text-warning fw-bold">Register</a></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const username = document.getElementById('username').value.trim();
+      const password = document.getElementById('password').value;
+ 
+      if (username === 'CarlBelen' && password === 'Carljaybelen05') {
+        window.location.href = `welcome.html?username=${encodeURIComponent(username)}`;
+      } else {
+    alert('Invalid username or password!');
+      }
+    });
+  </script>
+</body>
+</html>
