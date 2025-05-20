@@ -1,0 +1,242 @@
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+
+  body {
+    background: linear-gradient(135deg, #e4e4e4 25%, #dcdcdc 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+  }
+
+  .resume-container {
+    width: 794px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 60px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .resume-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle at 25% 25%, rgba(0, 58, 112, 0.03) 0%, transparent 40%),
+                      radial-gradient(circle at 75% 75%, rgba(50, 65, 140, 0.03) 0%, transparent 40%);
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .header img {
+    max-width: 100px;
+    border-radius: 12%;
+    margin-bottom: 12px;
+    border: 2px solid #32418C;
+  }
+
+  .header h1 {
+    font-size: 32px;
+    background: linear-gradient(90deg, #32418C, #003A70);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 6px;
+  }
+
+  .header p {
+    font-size: 15px;
+    color: #444;
+  }
+
+  .btn-back {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 16px;
+    background-color: #32418C;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+  }
+
+  .btn-back:hover {
+    background-color: #003A70;
+  }
+
+  .section {
+    margin-top: 40px;
+    padding-left: 15px;
+    border-left: 4px solid #32418C;
+    position: relative;
+    z-index: 1;
+  }
+
+  .section h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #003A70;
+    border-bottom: 2px solid #32418C;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+  }
+
+  .section p,
+  .section li {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  .section ul {
+    padding-left: 20px;
+    list-style: disc;
+  }
+
+  .section ul li {
+    margin-bottom: 8px;
+  }
+
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  .skills-grid div {
+    background: #e0e0e0;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: background 0.3s;
+  }
+
+  .skills-grid div:hover {
+    background: #32418C;
+    color: white;
+  }
+
+  .edu-entry,
+  .exp-entry,
+  .research-title,
+  .activity-entry {
+    margin-bottom: 10px;
+  }
+	
+  .btn-print {
+      background-color: #0078d4;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      font-weight: bold;
+      border-radius: 3px;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+
+    .btn-cancel {
+      background-color: #3c3c3c;
+      color: white;
+      padding: 0.5rem 1rem;
+      font-weight: bold;
+      font-size: 0.9rem;
+      border-radius: 3px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1rem;
+      border: 1px solid #555;
+    }
+	
+    {
+      margin: 0;
+      background-color: #f0f0f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .print-dialog-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 400vh;
+      width: 300px;
+      background-color: #2d2d30;
+      color: white;
+      padding: 1rem;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.6);
+      z-index: 1000;
+    }
+
+    .print-dialog h2 {
+      margin: 0;
+      font-size: 1.2rem;
+      color: white;
+    }
+
+    .print-dialog p {
+      margin: 0.5rem 0 1rem 0;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    .section {
+      margin-bottom: 1rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-size: 0.9rem;
+    }
+
+    select, input[type="text"], input[type="number"] {
+      width: 100%;
+      padding: 0.4rem;
+      border-radius: 3px;
+      border: none;
+      background-color: #3c3c3c;
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    .radio-group {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .radio-group label {
+      display: flex;
+      align-items: center;
+    }
+
+    .radio-group input {
+      margin-right: 0.3rem;
+    }
+
+    .link {
+      color: #4ea1f2;
+      font-size: 0.85rem;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    
